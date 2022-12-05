@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 
 import './App.css';
 import DemoOutput from './components/Demo/DemoOutput';
@@ -9,9 +9,9 @@ function App() {
 
   console.log('App Running');
 
-  const toggleParagraphHandler = () => {
+  const toggleParagraphHandler = useCallback(() => {
     setShowParagraph(prevShowParagraph => !prevShowParagraph);
-  }
+  }, []);
 
   return (
     <div className="app">
