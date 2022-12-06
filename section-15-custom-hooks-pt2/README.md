@@ -1,0 +1,1 @@
+This project works with Firebase. Replace LINK string in requests in App.js and NewTask.js with your firebase live database URL. 
