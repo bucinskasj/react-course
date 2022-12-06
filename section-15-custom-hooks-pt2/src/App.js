@@ -13,7 +13,7 @@ function App() {
     setError(null);
     try {
       const response = await fetch(
-        'LINK'
+        ''
       );
 
       if (!response.ok) {

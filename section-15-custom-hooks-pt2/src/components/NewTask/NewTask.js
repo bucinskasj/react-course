@@ -12,7 +12,7 @@ const NewTask = (props) => {
     setError(null);
     try {
       const response = await fetch(
-        'LINK',
+        '',
         {
           method: 'POST',
           body: JSON.stringify({ text: taskText }),
