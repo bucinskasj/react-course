@@ -12,7 +12,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        ""
+        "/meals.json"
       );
 
       if (!response.ok) {
