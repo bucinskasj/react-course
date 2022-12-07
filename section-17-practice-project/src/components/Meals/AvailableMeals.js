@@ -12,7 +12,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        "/meals.json"
+        "[FIREBASE_LINK]/meals.json"
       );
 
       if (!response.ok) {
