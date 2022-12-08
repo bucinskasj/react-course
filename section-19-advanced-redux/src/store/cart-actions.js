@@ -1,5 +1,5 @@
 import { uiActions } from "./ui-slice";
-import { cartActions } from './cart-slice';
+import { cartActions } from "./cart-slice";
 
 export const fetchCartData = () => {
   return async (dispatch) => {
@@ -8,8 +8,8 @@ export const fetchCartData = () => {
         "/cart.json"
       );
 
-      if(!response.ok) {
-        throw new Error('Could not fetch cart data')
+      if (!response.ok) {
+        throw new Error("Could not fetch cart data");
       }
 
       const data = await response.json();
@@ -19,8 +19,11 @@ export const fetchCartData = () => {
 
     try {
       const cartData = await fetchData();
-      dispatch(cartActions.replaceCart(cartData));
-    }catch(error){
+      dispatch(cartActions.replaceCart({
+        items: cartData.items || [],
+        totalQuantity: cartData.totalQuantity
+      }));
+    } catch (error) {
       dispatch(
         uiActions.showNotificaiton({
           status: "error",
@@ -47,7 +50,10 @@ export const sendCartData = (cart) => {
         "/cart.json",
         {
           method: "PUT",
-          body: JSON.stringify(cart),
+          body: JSON.stringify({
+            items: cart.items,
+            totalQuantity: cart.totalQuantity,
+          }),
         }
       );
 
