@@ -5,7 +5,7 @@ export const fetchCartData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
-        "/cart.json"
+        "[FIREBASE LINK]/cart.json"
       );
 
       if (!response.ok) {
@@ -47,7 +47,7 @@ export const sendCartData = (cart) => {
 
     const sendRequest = async () => {
       const response = await fetch(
-        "/cart.json",
+        "[FIREBASE LINK]/cart.json",
         {
           method: "PUT",
           body: JSON.stringify({
