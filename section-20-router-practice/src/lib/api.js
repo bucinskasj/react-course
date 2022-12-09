@@ -1,4 +1,4 @@
-const FIREBASE_DOMAIN = '';
+const FIREBASE_DOMAIN = '[FIREBASE_LINK]';
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
