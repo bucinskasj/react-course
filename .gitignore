@@ -17,4 +17,5 @@ section-18-more-redux/node_modules
 section-19-advanced-redux/node_modules
 section-20-react-router/node_modules
 section-20-router-practice/node_modules
+section-20-router-practice/build
 .DS_Store
