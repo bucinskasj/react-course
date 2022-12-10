@@ -19,4 +19,5 @@ section-20-react-router/node_modules
 section-20-router-practice/node_modules
 section-20-router-practice/build
 section-22-auth/node_modules
+section-22-auth/.env
 .DS_Store
