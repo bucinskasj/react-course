@@ -20,4 +20,5 @@ section-20-router-practice/node_modules
 section-20-router-practice/build
 section-22-auth/node_modules
 section-22-auth/.env
+section-23-nextjs-intro/node_modules
 .DS_Store
