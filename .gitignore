@@ -21,4 +21,6 @@ section-20-router-practice/build
 section-22-auth/node_modules
 section-22-auth/.env
 section-23-nextjs-intro/node_modules
+section-23-bigger-next-js-project/node_modules
+section-23-bigger-next-js-project/.next
 .DS_Store
