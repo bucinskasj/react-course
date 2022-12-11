@@ -2,7 +2,7 @@ import { Drawer } from "@mui/material";
 import WorkspaceSettings from "./WorkspaceSettings/WorkspaceSettings";
 
 const DrawerContainer = () => {
-  const drawerWidth = 300;
+  const drawerWidth = 280;
 
   return (
       <Drawer
