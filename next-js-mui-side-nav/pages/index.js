@@ -1,10 +1,15 @@
+import { Box } from '@mui/material';
 import * as React from 'react';
-import PermanentDrawerLeft from '../components/LeftNavigationDrawer/PermanentLeftDrawer';
+import DrawerContainer from '../components/LeftNavigationDrawer/DrawerContainer';
+import PageContent from '../components/MainContent/PageContent';
 
 export default function MyApp() {
   return (
     <div>
-      <PermanentDrawerLeft/>
+      <Box sx={{ display: 'flex' }}>
+        <DrawerContainer/>
+        <PageContent/>
+      </Box>
     </div>
   );
 }
